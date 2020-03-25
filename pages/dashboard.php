@@ -1,4 +1,4 @@
-<div class="row">
+<!-- <div class="row">
 
   <div class="col">
 
@@ -7,12 +7,12 @@
     <div>
       <div id="peta" style="width: 100%; height: 500px;"></div>
     </div>
-    <?php include "module/wilayah-jakarta.php"; ?>
+    <?php include "module/wilayah-jakarta.php"; ?> -->
 
-  </div>
+  <!-- </div> -->
   <!-- End col -->
 
-</div>
+<!-- </div> -->
 <!-- End row -->
 
 <div class="d-sm-flex align-items-center justify-content-between my-4">
