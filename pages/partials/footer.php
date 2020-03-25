@@ -8,3 +8,7 @@
   </div>
 </footer>
 <!-- End of Footer -->
+
+</body>
+
+</html>
