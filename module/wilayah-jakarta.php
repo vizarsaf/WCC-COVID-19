@@ -121,6 +121,8 @@ setTimeout(function initMap() {
       if (kelurahan == "Kamal") color = "red";
       if (kelurahan == "Kamal Muara") color = "yellow";
       if (kelurahan == "Tegal Alur") color = "red";
+      if (kelurahan == "Gambir") color = "yellow";
+      if (kelurahan == "Petojo Selatan") color = "yellow";
     }
     // End if Jakarta
     return {

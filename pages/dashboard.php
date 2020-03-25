@@ -28,7 +28,7 @@
         <div class="row no-gutters align-items-center">
           <div class="col mr-2">
             <div class="text-xs font-weight-bold text-uppercase mb-1">Positif COVID-19</div>
-            <div class="h5 mb-0 font-weight-bold">686</div>
+            <div class="h5 mb-0 font-weight-bold">790</div>
           </div>
           <div class="col-auto">
             <i class="fas fa-head-side-cough fa-2x"></i>
@@ -44,7 +44,7 @@
         <div class="row no-gutters align-items-center">
           <div class="col mr-2">
             <div class="text-xs font-weight-bold text-uppercase mb-1">Meninggal</div>
-            <div class="h5 mb-0 font-weight-bold">55</div>
+            <div class="h5 mb-0 font-weight-bold">58</div>
           </div>
           <div class="col-auto">
             <i class="fas fa-skull-crossbones fa-2x"></i>
@@ -60,7 +60,7 @@
         <div class="row no-gutters align-items-center">
           <div class="col mr-2">
             <div class="text-xs font-weight-bold text-uppercase mb-1">Sembuh</div>
-            <div class="h5 mb-0 font-weight-bold">30</div>
+            <div class="h5 mb-0 font-weight-bold">31</div>
           </div>
           <div class="col-auto">
             <i class="fas fa-notes-medical fa-2x"></i>
