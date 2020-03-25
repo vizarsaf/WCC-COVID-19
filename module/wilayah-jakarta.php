@@ -88,13 +88,13 @@ setTimeout(function initMap() {
 
     $center_lat = -6.121435;
     $center_long = 106.774124;
-    $zoom = 12;
+    $zoom = 10;
 
     switch ($_GET["region"]) {
       case 'Jakarta':
         $center_lat = -6.121435;
         $center_long = 106.774124;
-        $zoom = 12;
+        $zoom = 10;
         break;
 
       default:
@@ -116,16 +116,13 @@ setTimeout(function initMap() {
   peta.data.setStyle(function(feature) {
     var provinsi = feature.getProperty('provinsi');
     var kelurahan = feature.getProperty('kelurahan');
-    var color = "gray";
-    if (provinsi == "JAKARTA" && kelurahan == "KAMAL") {
-      color = "red";
+    var color = "white";
+    if (provinsi == "Jakarta") {
+      if (kelurahan == "Kamal") color = "red";
+      if (kelurahan == "Kamal Muara") color = "yellow";
+      if (kelurahan == "Tegal Alur") color = "red";
     }
-    if (provinsi == "JAKARTA" && kelurahan == "KAMAL MUARA") {
-      color = "yellow";
-    }
-    if (provinsi == "Jakarta" && kelurahan == "Tegal Alur") {
-      color = "red";
-    }
+    // End if Jakarta
     return {
       fillColor: color,
       strokeWeight: 1
