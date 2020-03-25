@@ -1,18 +1,6 @@
 <?php
   include "pages/partials/header.php";
 ?>
-  <!-- Page Wrapper -->
-  <div id="wrapper">
-
-    <?php include "pages/partials/sidebar.php"; ?>
-
-    <!-- Content Wrapper -->
-    <div id="content-wrapper" class="d-flex flex-column">
-
-      <!-- Main Content -->
-      <div id="content">
-
-        <?php include "pages/partials/topbar.php"; ?>
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
@@ -26,8 +14,7 @@
         </div>
         <!-- /.container-fluid -->
 
-      </div>
-      <!-- End of Main Content -->
+      
 
   <?php
     include "pages/partials/scroll.php";
@@ -36,8 +23,4 @@
     include "pages/partials/footer.php";
   ?>
 
-      </div>
-      <!-- End of Content Wrapper -->
-
-    </div>
-    <!-- End of Page Wrapper -->
+      

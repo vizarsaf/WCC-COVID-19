@@ -34,3 +34,16 @@
 </head>
 
 <body id="page-top" class="sidebar-toggled">
+
+ <!-- Page Wrapper -->
+ <div id="wrapper">
+
+<?php include "pages/partials/sidebar.php"; ?>
+
+<!-- Content Wrapper -->
+<div id="content-wrapper" class="d-flex flex-column">
+
+<!-- Main Content -->
+<div id="content">
+
+<?php include "pages/partials/topbar.php"; ?>

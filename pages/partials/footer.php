@@ -1,3 +1,6 @@
+</div>
+<!-- End of Main Content -->
+
 <!-- Footer -->
 <footer class="sticky-footer bg-white d-print-none">
   <div class="container my-auto">
@@ -8,6 +11,12 @@
   </div>
 </footer>
 <!-- End of Footer -->
+
+</div>
+<!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
 
 </body>
 
