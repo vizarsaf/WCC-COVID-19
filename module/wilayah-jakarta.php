@@ -103,7 +103,6 @@ setTimeout(function initMap() {
   ?>
 
   var peta;
-
   // Menampilkan peta
   peta = new google.maps.Map(document.getElementById('peta'), {
     zoom: <?= $zoom; ?>,
@@ -111,6 +110,7 @@ setTimeout(function initMap() {
     styles: <?= $styles; ?>,
     mapTypeId: 'terrain'
   }); // End var map
+  var infowindow = new google.maps.InfoWindow();
 
   peta.data.loadGeoJson('module/geo.json');
   peta.data.setStyle(function(feature) {
@@ -129,6 +129,22 @@ setTimeout(function initMap() {
       fillColor: color,
       strokeWeight: 1
     }
+  });
+  peta.data.addListener('mouseover', function(event) {
+    var html = "" +
+      "<p class='text-primary'>" +
+      event.feature.getProperty('provinsi') +
+      ", "
+      +
+      event.feature.getProperty('kelurahan') +
+      "</p>" +
+      "";
+    infowindow.setContent(html);
+    infowindow.setPosition(event.latLng);
+    infowindow.setOptions({
+      pixelOffset: new google.maps.Size(0, -34)
+    });
+    infowindow.open(peta);
   });
 
 } // End initMap()
