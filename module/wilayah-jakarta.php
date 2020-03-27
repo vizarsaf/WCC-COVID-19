@@ -112,7 +112,7 @@ setTimeout(function initMap() {
   }); // End var map
   var infowindow = new google.maps.InfoWindow();
 
-  peta.data.loadGeoJson('module/geo.json');
+  peta.data.loadGeoJson('module/geojson.php');
   peta.data.setStyle(function(feature) {
     var provinsi = feature.getProperty('provinsi');
     var kelurahan = feature.getProperty('kelurahan');
