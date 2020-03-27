@@ -15,7 +15,8 @@
         FROM kelurahan
         WHERE polygon != ''
       ";
-      while ($row = $con->query($sql)->fetch_assoc()) { $i++; if ($i>1) echo ",";
+      $result = $con->query($sql);
+      while ($row = $result->fetch_assoc()) { $i++; if ($i>1) echo ",";
     ?>
     {
       "type":"Feature",
