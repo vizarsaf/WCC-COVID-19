@@ -17,7 +17,7 @@
 
 <div class="d-sm-flex align-items-center justify-content-between my-4">
   <h3 class="h3">DKI Jakarta</h3>
-  <h5 class="h5">(Last Update: 2020 Maret 26 09:35)<a href="https://corona.jakarta.go.id/">corona.jakarta.go.id</a></h5>
+  <h5 class="h5">(Last Update: 2020 Maret 28 10:00)<a href="https://corona.jakarta.go.id/">corona.jakarta.go.id</a></h5>
 </div>
 
 <div class="row">
@@ -32,7 +32,7 @@
             <div class="row no-gutters align-items-center">
               <div class="col mr-2">
                 <div class="text-xs font-weight-bold text-uppercase mb-1">Positif COVID-19</div>
-                <div class="h5 mb-0 font-weight-bold">790</div>
+                <div class="h5 mb-0 font-weight-bold">566</div>
               </div>
               <div class="col-auto">
                 <i class="fas fa-head-side-cough fa-2x"></i>
@@ -64,7 +64,7 @@
             <div class="row no-gutters align-items-center">
               <div class="col mr-2">
                 <div class="text-xs font-weight-bold text-uppercase mb-1">Meninggal</div>
-                <div class="h5 mb-0 font-weight-bold">58</div>
+                <div class="h5 mb-0 font-weight-bold">57</div>
               </div>
               <div class="col-auto">
                 <i class="fas fa-skull-crossbones fa-2x"></i>
