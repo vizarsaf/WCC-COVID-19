@@ -11,6 +11,8 @@
       $i = 0;
       $sql = "SELECT
         kelurahan,
+        menunggu_hasil,
+        positif,
         polygon
         FROM kelurahan
         WHERE polygon != ''
