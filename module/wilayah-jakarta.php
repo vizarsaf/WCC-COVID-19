@@ -116,13 +116,13 @@ setTimeout(function initMap() {
   peta.data.setStyle(function(feature) {
     var provinsi = feature.getProperty('provinsi');
     var kelurahan = feature.getProperty('kelurahan');
+    var menunggu_hasil = feature.getProperty('menunggu_hasil');
+    var positif = feature.getProperty('positif');
     var color = "white";
     if (provinsi == "Jakarta") {
-      if (kelurahan == "Kamal") color = "red";
-      if (kelurahan == "Kamal Muara") color = "yellow";
-      if (kelurahan == "Tegal Alur") color = "red";
-      if (kelurahan == "Gambir") color = "yellow";
-      if (kelurahan == "Petojo Selatan") color = "yellow";
+      if (positif == 0 && menunggu_hasil == 0) color = "green";
+      if (menunggu_hasil > 0) color = "yellow";
+      if (positif > 0) color = "red";
     }
     // End if Jakarta
     return {

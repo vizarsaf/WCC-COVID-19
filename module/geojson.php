@@ -23,6 +23,8 @@
       "properties":{
         "provinsi":"Jakarta",
         "kelurahan":"<?= $row["kelurahan"]; ?>"
+        "menunggu_hasil":"<?= $row["menunggu_hasil"]; ?>"
+        "positif":"<?= $row["positif"]; ?>"
       },
       "geometry":{
         "type":"Polygon",
