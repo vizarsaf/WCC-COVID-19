@@ -1,6 +1,9 @@
 <?php
   include "config/db.php";
   ob_start();
+   $koneksi    = mysqli_connect("localhost", "root", "", "corona_db");
+  $category  = mysqli_query($koneksi, "SELECT category FROM covid19 order by ID asc");
+  $jumlah      = mysqli_query($koneksi, "SELECT jumlah FROM covid19 order by ID asc");
 ?>
 <!DOCTYPE html>
 <html lang="en">

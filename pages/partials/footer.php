@@ -21,3 +21,37 @@
 </body>
 
 </html>
+
+<!-- scrpit charts  -->
+
+<script  type="text/javascript">
+  var ctx = document.getElementById("piechart").getContext("2d");
+  var data = {
+            labels: [<?php while ($p = mysqli_fetch_array($category)) { echo '"' . $p['category'] . '",';}?>],
+            datasets: [
+            {
+              label: 'Chart COVID-19',
+              data: [<?php while ($p = mysqli_fetch_array($jumlah)) { echo '"' . $p['jumlah'] . '",';}?>],
+              backgroundColor: [
+                '#ffb6c1',
+                '#00ff00',
+                '#b22222'
+                  ]
+            }
+            ]
+            };
+
+  var myPieChart = new Chart(ctx, {
+                  type: 'pie',
+                  data: data,
+                  options: {	
+                    responsive: true
+
+
+                }
+              });
+
+
+</script>
+
+<!-- end script -->
