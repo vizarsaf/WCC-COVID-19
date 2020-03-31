@@ -86,14 +86,14 @@ setTimeout(function initMap() {
       ]
     ";
 
-    $center_lat = -6.121435;
-    $center_long = 106.774124;
+    $center_lat = -6.175392;
+    $center_long = 106.827153;
     $zoom = 13;
 
     switch ($_GET["region"]) {
       case 'Jakarta':
-        $center_lat = -6.121435;
-        $center_long = 106.774124;
+        $center_lat = -6.175392;
+        $center_long = 106.827153;
         $zoom = 13;
         break;
 
