@@ -42,15 +42,13 @@
             };
 
   var myPieChart = new Chart(ctx, {
+                  scaleFontColor: "white",
                   type: 'pie',
                   data: data,
                   options: {
                     responsive: true
                 }
               });
-              
-  Chart.defaults.global.defaultFontColor = "#fff";
-
 
 </script>
 
