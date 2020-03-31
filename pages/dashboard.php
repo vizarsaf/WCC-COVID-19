@@ -94,7 +94,7 @@
 
         <div class="card text-gray-100 shadow p-3" style="background:#2060A7;">
           <h3>Data Jakarta</h3>
-          <canvas style="height:400px;" id="piechart"></canvas>
+          <canvas style="height:300px;" id="piechart"></canvas>
         </div>
 
       </div>
