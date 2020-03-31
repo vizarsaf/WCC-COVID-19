@@ -10,7 +10,7 @@
       $data_jakarta_source      = $row['source'];
     }
   ?>
-  <h5 class="h5">(Last Update: <?= $data_jakarta_last_update; ?> - <a href="<?= $data_jakarta_source; ?>">Source</a>)</h5>
+  <h5 class="h5">(Last Update: <?= $data_jakarta_last_update; ?> - <a href="<?= $data_jakarta_source; ?>" target="_blank">Source</a>)</h5>
 </div>
 
 <div class="row">
