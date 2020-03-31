@@ -93,7 +93,7 @@
       <div class="col-md-12">
 
         <div class="card shadow py-2">
-          <canvas style="height:400px;" id="piechart"></canvas>
+          <canvas class="p-3" style="height:400px;" id="piechart"></canvas>
         </div>
 
       </div>
