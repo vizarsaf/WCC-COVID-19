@@ -134,23 +134,23 @@ setTimeout(function initMap() {
   peta.data.addListener('click', function(event) {
     var html = "" +
 
-      "<p>" +
+      "<p class='text-dark'>" +
       "Provinsi: " + event.feature.getProperty('provinsi') +
       "</p>" +
 
-      "<p>" +
+      "<p class='text-dark'>" +
       "Kelurahan: " + event.feature.getProperty('kelurahan') +
       "</p>" +
 
-      "<p>" +
+      "<p class='text-warning'>" +
       "Menunggu Hasil: " + event.feature.getProperty('menunggu_hasil') +
       "</p>" +
 
-      "<p>" +
+      "<p class='text-danger'>" +
       "Positif: " + event.feature.getProperty('positif') +
       "</p>" +
 
-      "<p>" +
+      "<p class='text-dark'>" +
       "Last Update: " + event.feature.getProperty('last_update') +
       "</p>" +
 
