@@ -7,8 +7,9 @@
   "type":"FeatureCollection",
   "features":[
 
+    <?php $i = 0; ?>
+    
     <?php
-      $i = 0;
       $sql = "SELECT *
         FROM provinsi
         WHERE polygon != ''
@@ -40,7 +41,6 @@
     <?php } ?>
 
     <?php
-      $i = 0;
       $sql = "SELECT *
         FROM kelurahan
         WHERE polygon != ''
