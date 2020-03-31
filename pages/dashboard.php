@@ -93,7 +93,7 @@
       <div class="col-md-12">
 
         <div class="card text-gray-100 shadow py-2" style="background:#2060A7;">
-          <h3 class="px-4 pt-4">Data Jakarta</h3>
+          <h3 class="mx-4 mt-4">Data Jakarta</h3>
           <canvas class="p-4" style="height:400px;" id="piechart"></canvas>
         </div>
 
