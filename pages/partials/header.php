@@ -1,6 +1,7 @@
 <?php
   include "config/db.php";
   ob_start();
+  $data_jakarta = mysqli_query($con, "SELECT positif, sembuh, meninggal FROM provinsi WHERE nama='Jakarta'");
 ?>
 <!DOCTYPE html>
 <html lang="en">
