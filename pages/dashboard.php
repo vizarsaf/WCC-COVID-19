@@ -93,8 +93,10 @@
       <div class="col-md-12">
 
         <div class="card text-gray-100 shadow h-100 py-2" style="background:#2060A7;">
-          <div class="text-xs font-weight-bold text-uppercase mb-1">Data Jakarta</div>
-          <canvas class="p-3" style="height:400px;" id="piechart"></canvas>
+          <div class="card-body">
+            <div class="text-xs font-weight-bold text-uppercase mb-1">Data Jakarta</div>
+            <canvas class="p-3" style="height:400px;" id="piechart"></canvas>
+          </div>
         </div>
 
       </div>
