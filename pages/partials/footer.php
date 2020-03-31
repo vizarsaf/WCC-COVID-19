@@ -27,11 +27,11 @@
 <script  type="text/javascript">
   var ctx = document.getElementById("piechart").getContext("2d");
   var data = {
-            labels: [<?php while ($p = mysqli_fetch_array($category)) { echo '"' . $p['category'] . '",';}?>],
+            labels: ["Positif","Sembuh","Meninggal"],
             datasets: [
             {
               label: 'Chart COVID-19',
-              data: [<?php while ($p = mysqli_fetch_array($jumlah)) { echo '"' . $p['jumlah'] . '",';}?>],
+              data: [<?php while ($p = mysqli_fetch_array($data_jakarta)) { echo '"' . $p['positif'] . '","' . $p['sembuh'] . '","' . $p['meninggal'] . '"';}?>],
               backgroundColor: [
                 '#ffb6c1',
                 '#00ff00',
