@@ -118,9 +118,10 @@ setTimeout(function initMap() {
     var kelurahan = feature.getProperty('kelurahan');
     var menunggu_hasil = feature.getProperty('menunggu_hasil');
     var positif = feature.getProperty('positif');
+    var last_update = feature.getProperty('last_update');
     var color = "white";
     if (provinsi == "Jakarta") {
-      if (positif == 0 && menunggu_hasil == 0) color = "green";
+      if (positif == 0 && menunggu_hasil == 0 && last_update != "0000-00-00 00:00:00") color = "green";
       if (menunggu_hasil > 0) color = "yellow";
       if (positif > 0) color = "red";
     }
@@ -132,12 +133,27 @@ setTimeout(function initMap() {
   });
   peta.data.addListener('mouseover', function(event) {
     var html = "" +
+
       "<p class='text-primary'>" +
-      event.feature.getProperty('provinsi') +
-      ", "
-      +
-      event.feature.getProperty('kelurahan') +
+      "Provinsi: " + event.feature.getProperty('provinsi') +
       "</p>" +
+
+      "<p class='text-primary'>" +
+      "Kelurahan: " + event.feature.getProperty('kelurahan') +
+      "</p>" +
+
+      "<p class='text-primary'>" +
+      "Menunggu Hasil: " + event.feature.getProperty('menunggu_hasil') +
+      "</p>" +
+
+      "<p class='text-primary'>" +
+      "Positif: " + event.feature.getProperty('positif') +
+      "</p>" +
+
+      "<p class='text-primary'>" +
+      "Last Update: " + event.feature.getProperty('last_update') +
+      "</p>" +
+
       "";
     infowindow.setContent(html);
     infowindow.setPosition(event.latLng);

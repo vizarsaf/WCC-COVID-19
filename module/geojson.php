@@ -9,11 +9,7 @@
 
     <?php
       $i = 0;
-      $sql = "SELECT
-        kelurahan,
-        menunggu_hasil,
-        positif,
-        polygon
+      $sql = "SELECT *
         FROM kelurahan
         WHERE polygon != ''
       ";
@@ -26,7 +22,8 @@
         "provinsi":"Jakarta",
         "kelurahan":"<?= $row["kelurahan"]; ?>",
         "menunggu_hasil":"<?= $row["menunggu_hasil"]; ?>",
-        "positif":"<?= $row["positif"]; ?>"
+        "positif":"<?= $row["positif"]; ?>",
+        "last_update":"<?= $row["last_update"]; ?>"
       },
       "geometry":{
         "type":"Polygon",
