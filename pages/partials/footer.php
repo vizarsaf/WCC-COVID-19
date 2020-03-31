@@ -24,6 +24,7 @@
 
 <!-- scrpit charts  -->
 
+<?php $data_jakarta = mysqli_query($con, "SELECT positif, sembuh, meninggal FROM provinsi WHERE nama='Jakarta'"); ?>
 <script  type="text/javascript">
   var ctx = document.getElementById("piechart").getContext("2d");
   var data = {
