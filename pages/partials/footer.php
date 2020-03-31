@@ -46,6 +46,9 @@
                   type: 'pie',
                   data: data,
                   options: {
+                    legend: {
+                        fontColor: "white"
+                    },
                     responsive: true
                 }
               });
