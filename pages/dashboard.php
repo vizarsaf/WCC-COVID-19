@@ -109,7 +109,7 @@
     <div class="row">
       <div class="col-md-12">
 
-        <div class="card">
+        <div class="card shadow py-2">
           <div class="card-body">
             <div class="row no-gutters align-items-center">
               <div class="col mr-2">
