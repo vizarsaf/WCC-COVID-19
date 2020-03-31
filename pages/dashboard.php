@@ -92,7 +92,7 @@
     <div class="row">
       <div class="col-md-12">
 
-        <div class="card shadow py-2">
+        <div class="card shadow" style="background:#2060A7;">
           <div class="card-header">
             Data Jakarta
           </div>

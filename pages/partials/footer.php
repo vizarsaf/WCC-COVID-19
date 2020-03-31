@@ -44,8 +44,9 @@
   var myPieChart = new Chart(ctx, {
                   type: 'pie',
                   data: data,
-                  options: {	
-                    responsive: true
+                  options: {
+                    responsive: true,
+                    scaleFontColor: "#FFFFFF"
 
 
                 }
