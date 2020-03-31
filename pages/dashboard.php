@@ -1,15 +1,16 @@
 <div class="d-sm-flex align-items-center justify-content-between my-4">
   <h3 class="h3">DKI Jakarta</h3>
   <?php
-    $data_jakarta = mysqli_query($con, "SELECT positif, sembuh, meninggal, last_update FROM provinsi WHERE nama='Jakarta'");
+    $data_jakarta = mysqli_query($con, "SELECT positif, sembuh, meninggal, last_update, source FROM provinsi WHERE nama='Jakarta'");
     while ($row = mysqli_fetch_array($data_jakarta)) {
       $data_jakarta_positif     = $row['positif'];
       $data_jakarta_sembuh      = $row['sembuh'];
       $data_jakarta_meninggal   = $row['meninggal'];
       $data_jakarta_last_update = $row['last_update'];
+      $data_jakarta_source      = $row['source'];
     }
   ?>
-  <h5 class="h5">(Last Update: <?= $data_jakarta_last_update; ?> - <a href="https://corona.jakarta.go.id/">Source</a>)</h5>
+  <h5 class="h5">(Last Update: <?= $data_jakarta_last_update; ?> - <a href="<?= $data_jakarta_source; ?>">Source</a>)</h5>
 </div>
 
 <div class="row">
