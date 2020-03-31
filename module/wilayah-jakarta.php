@@ -120,7 +120,7 @@ setTimeout(function initMap() {
 
       "";
     }
-    event.feature.getProperty('source')infowindow.setContent(info);
+    infowindow.setContent(info);
     infowindow.setPosition(event.latLng);
     infowindow.setOptions({
       pixelOffset: new google.maps.Size(0, -34)
