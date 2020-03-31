@@ -97,12 +97,10 @@
             <div class="row no-gutters align-items-center">
               <div class="col mr-2">
                 <div class="text-xs font-weight-bold text-uppercase mb-1">
-                  <div class="container">
-
-                    <canvas class="h-100" id="piechart"></canvas>
-
-                    </div>
+                  <div class="chart-container" style="position: relative; height:100vh; width:100vw">
+                    <canvas id="chart"></canvas>
                   </div>
+                </div>
               </div>
             </div>
           </div>
