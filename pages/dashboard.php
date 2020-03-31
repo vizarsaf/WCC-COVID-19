@@ -107,7 +107,7 @@
 
   <div class="col-md-3">
     <div class="row">
-      <div class="col-md-20">
+      <div class="col-md-12">
 
         <div class="card">
           <div class="card-body">
