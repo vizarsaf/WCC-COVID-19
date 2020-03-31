@@ -31,7 +31,7 @@
             datasets: [
             {
               label: 'Chart COVID-19',
-              data: [<?php while ($p = mysqli_fetch_array($data_jakarta)) { echo '"' . $p['positif'] . '","' . $p['sembuh'] . '","' . $p['meninggal'] . '"';}?>],
+              data: [<?php while ($p = mysqli_fetch_array(mysqli_query($con, "SELECT positif, sembuh, meninggal FROM provinsi WHERE nama='Jakarta'"))) { echo '"' . $p['positif'] . '","' . $p['sembuh'] . '","' . $p['meninggal'] . '"';}?>],
               backgroundColor: [
                 '#57C4ED',
                 '#79CAC5',

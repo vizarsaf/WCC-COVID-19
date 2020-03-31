@@ -15,7 +15,7 @@
             <div class="row no-gutters align-items-center">
               <div class="col mr-2">
                 <div class="text-xs font-weight-bold text-uppercase mb-1">Positif COVID-19</div>
-                <div class="h5 mb-0 font-weight-bold"><?php while ($row = mysqli_fetch_array($data_jakarta)) echo $row['positif']; ?></div>
+                <div class="h5 mb-0 font-weight-bold"><?php while ($row = mysqli_fetch_array(mysqli_query($con, "SELECT positif FROM provinsi WHERE nama='Jakarta'"))) echo $row['positif']; ?></div>
               </div>
               <div class="col-auto">
                 <i class="fas fa-head-side-cough fa-2x"></i>
@@ -31,7 +31,7 @@
             <div class="row no-gutters align-items-center">
               <div class="col mr-2">
                 <div class="text-xs font-weight-bold text-uppercase mb-1">Sembuh</div>
-                <div class="h5 mb-0 font-weight-bold"><?php while ($row = mysqli_fetch_array($data_jakarta)) echo $row['sembuh']; ?></div>
+                <div class="h5 mb-0 font-weight-bold"><?php while ($row = mysqli_fetch_array(mysqli_query($con, "SELECT sembuh FROM provinsi WHERE nama='Jakarta'"))) echo $row['sembuh']; ?></div>
               </div>
               <div class="col-auto">
                 <i class="fas fa-notes-medical fa-2x"></i>
@@ -47,7 +47,7 @@
             <div class="row no-gutters align-items-center">
               <div class="col mr-2">
                 <div class="text-xs font-weight-bold text-uppercase mb-1">Meninggal</div>
-                <div class="h5 mb-0 font-weight-bold"><?php while ($row = mysqli_fetch_array($data_jakarta)) echo $row['meninggal']; ?></div>
+                <div class="h5 mb-0 font-weight-bold"><?php while ($row = mysqli_fetch_array(mysqli_query($con, "SELECT meninggal FROM provinsi WHERE nama='Jakarta'"))) echo $row['meninggal']; ?></div>
               </div>
               <div class="col-auto">
                 <i class="fas fa-skull-crossbones fa-2x"></i>
