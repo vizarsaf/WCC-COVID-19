@@ -131,7 +131,7 @@ setTimeout(function initMap() {
       strokeWeight: 1
     }
   });
-  peta.data.addListener('mouseover', function(event) {
+  peta.data.addListener('click', function(event) {
     var html = "" +
 
       "<p class='text-primary'>" +
@@ -153,6 +153,8 @@ setTimeout(function initMap() {
       "<p class='text-primary'>" +
       "Last Update: " + event.feature.getProperty('last_update') +
       "</p>" +
+
+      "<a href='https://jeo.kompas.com/update-data-kasus-covid-19-di-dki-jakarta-per-kelurahan'>Source</a>" +
 
       "";
     infowindow.setContent(html);
