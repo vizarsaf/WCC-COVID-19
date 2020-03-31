@@ -65,58 +65,61 @@ setTimeout(function initMap() {
     }
   });
   peta.data.addListener('click', function(event) {
-    var info_provinsi = "" +
+    if (event.feature.getProperty('table')=="provinsi") {
+      var info = "" +
 
-      "<p class='text-dark'>" +
-      "Provinsi: " + event.feature.getProperty('provinsi') +
-      "</p>" +
+        "<p class='text-dark'>" +
+        "Provinsi: " + event.feature.getProperty('provinsi') +
+        "</p>" +
 
-      "<p class='text-danger'>" +
-      "Positif: " + event.feature.getProperty('positif') +
-      "</p>" +
+        "<p class='text-danger'>" +
+        "Positif: " + event.feature.getProperty('positif') +
+        "</p>" +
 
-      "<p class='text-success'>" +
-      "Sembuh: " + event.feature.getProperty('sembuh') +
-      "</p>" +
+        "<p class='text-success'>" +
+        "Sembuh: " + event.feature.getProperty('sembuh') +
+        "</p>" +
 
-      "<p class='text-dark'><b>" +
-      "Meninggal: " + event.feature.getProperty('meninggal') +
-      "</b></p>" +
+        "<p class='text-dark'><b>" +
+        "Meninggal: " + event.feature.getProperty('meninggal') +
+        "</b></p>" +
 
-      "<p class='text-dark'>" +
-      "Last Update: " + event.feature.getProperty('last_update') +
-      "</p>" +
+        "<p class='text-dark'>" +
+        "Last Update: " + event.feature.getProperty('last_update') +
+        "</p>" +
 
-      "<a target='_blank' href='" + event.feature.getProperty('source') + "'>Source</a>" +
+        "<a target='_blank' href='" + event.feature.getProperty('source') + "'>Source</a>" +
 
-    "";
-    var info_kelurahan = "" +
+      "";
+    }
+    if (event.feature.getProperty('table')=="kelurahan") {
+      var info = "" +
 
-      "<p class='text-dark'>" +
-      "Provinsi: " + event.feature.getProperty('provinsi') +
-      "</p>" +
+        "<p class='text-dark'>" +
+        "Provinsi: " + event.feature.getProperty('provinsi') +
+        "</p>" +
 
-      "<p class='text-dark'>" +
-      "Kelurahan: " + event.feature.getProperty('kelurahan') +
-      "</p>" +
+        "<p class='text-dark'>" +
+        "Kelurahan: " + event.feature.getProperty('kelurahan') +
+        "</p>" +
 
-      "<p class='text-warning'>" +
-      "Menunggu Hasil: " + event.feature.getProperty('menunggu_hasil') +
-      "</p>" +
+        "<p class='text-warning'>" +
+        "Menunggu Hasil: " + event.feature.getProperty('menunggu_hasil') +
+        "</p>" +
 
-      "<p class='text-danger'>" +
-      "Positif: " + event.feature.getProperty('positif') +
-      "</p>" +
+        "<p class='text-danger'>" +
+        "Positif: " + event.feature.getProperty('positif') +
+        "</p>" +
 
-      "<p class='text-dark'>" +
-      "Last Update: " + event.feature.getProperty('last_update') +
-      "</p>" +
+        "<p class='text-dark'>" +
+        "Last Update: " + event.feature.getProperty('last_update') +
+        "</p>" +
 
-      "<a target='_blank' href='" + event.feature.getProperty('source') + "'>Source</a>" +
+        "<a target='_blank' href='" + event.feature.getProperty('source') + "'>Source</a>" +
 
-    "";
-    if (event.feature.getProperty('table')=="provinsi") event.feature.getProperty('source')infowindow.setContent(info_provinsi);
-    if (event.feature.getProperty('table')=="kelurahan") event.feature.getProperty('source')infowindow.setContent(info_kelurahan);
+      "";
+    }
+    event.feature.getProperty('source')infowindow.setContent(info);
     infowindow.setPosition(event.latLng);
     infowindow.setOptions({
       pixelOffset: new google.maps.Size(0, -34)
