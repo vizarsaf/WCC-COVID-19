@@ -65,8 +65,9 @@ setTimeout(function initMap() {
     }
   });
   peta.data.addListener('click', function(event) {
+    var info = "";
     if (event.feature.getProperty('table')=="provinsi") {
-      var info = "" +
+      info = "" +
 
         "<p class='text-dark'>" +
         "Provinsi: " + event.feature.getProperty('provinsi') +
@@ -93,7 +94,7 @@ setTimeout(function initMap() {
       "";
     }
     if (event.feature.getProperty('table')=="kelurahan") {
-      var info = "" +
+      info = "" +
 
         "<p class='text-dark'>" +
         "Provinsi: " + event.feature.getProperty('provinsi') +
