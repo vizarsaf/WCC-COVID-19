@@ -154,7 +154,7 @@ setTimeout(function initMap() {
       "Last Update: " + event.feature.getProperty('last_update') +
       "</p>" +
 
-      "<a target='_blank' href='https://jeo.kompas.com/update-data-kasus-covid-19-di-dki-jakarta-per-kelurahan'>Source</a>" +
+      "<a target='_blank' href='" + event.feature.getProperty('source') + "'>Source</a>" +
 
       "";
     infowindow.setContent(html);

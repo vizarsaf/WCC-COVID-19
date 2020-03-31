@@ -23,7 +23,8 @@
         "kelurahan":"<?= $row["kelurahan"]; ?>",
         "menunggu_hasil":"<?= $row["menunggu_hasil"]; ?>",
         "positif":"<?= $row["positif"]; ?>",
-        "last_update":"<?= $row["last_update"]; ?>"
+        "last_update":"<?= $row["last_update"]; ?>",
+        "source":"<?= $row["source"]; ?>"
       },
       "geometry":{
         "type":"Polygon",
