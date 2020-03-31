@@ -45,12 +45,11 @@
                   type: 'pie',
                   data: data,
                   options: {
-                    responsive: true,
-                    scaleFontColor: "#FFFFFF"
-
-
+                    responsive: true
                 }
               });
+              
+  Chart.defaults.global.defaultFontColor = "#fff";
 
 
 </script>
