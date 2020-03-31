@@ -92,7 +92,8 @@
     <div class="row">
       <div class="col-md-12">
 
-        <div class="card text-gray-100 shadow p-5" style="background:#2060A7;">
+        <div class="card text-gray-100 shadow p-3" style="background:#2060A7;">
+          <h3>Data Jakarta</h3>
           <canvas style="height:400px;" id="piechart"></canvas>
         </div>
 
