@@ -134,27 +134,27 @@ setTimeout(function initMap() {
   peta.data.addListener('click', function(event) {
     var html = "" +
 
-      "<p class='text-primary'>" +
+      "<p>" +
       "Provinsi: " + event.feature.getProperty('provinsi') +
       "</p>" +
 
-      "<p class='text-primary'>" +
+      "<p>" +
       "Kelurahan: " + event.feature.getProperty('kelurahan') +
       "</p>" +
 
-      "<p class='text-primary'>" +
+      "<p>" +
       "Menunggu Hasil: " + event.feature.getProperty('menunggu_hasil') +
       "</p>" +
 
-      "<p class='text-primary'>" +
+      "<p>" +
       "Positif: " + event.feature.getProperty('positif') +
       "</p>" +
 
-      "<p class='text-primary'>" +
+      "<p>" +
       "Last Update: " + event.feature.getProperty('last_update') +
       "</p>" +
 
-      "<a href='https://jeo.kompas.com/update-data-kasus-covid-19-di-dki-jakarta-per-kelurahan'>Source</a>" +
+      "<a target='_blank' href='https://jeo.kompas.com/update-data-kasus-covid-19-di-dki-jakarta-per-kelurahan'>Source</a>" +
 
       "";
     infowindow.setContent(html);
