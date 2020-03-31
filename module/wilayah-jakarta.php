@@ -4,7 +4,7 @@ setTimeout(function initMap() {
 
   <?php
 
-    include "module/style-peta.php"
+    include "module/style-peta.php";
 
     $center_lat = -6.175392;
     $center_long = 106.827153;
