@@ -99,7 +99,7 @@
                 <div class="text-xs font-weight-bold text-uppercase mb-1">
                   <div class="container">
 
-                    <canvas id="piechart"></canvas>
+                    <canvas class="h-100" id="piechart"></canvas>
 
                     </div>
                   </div>
