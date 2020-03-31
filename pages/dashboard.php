@@ -92,18 +92,8 @@
     <div class="row">
       <div class="col-md-12">
 
-        <div class="card shadow py-2" style="height:300px;">
-          <div class="card-body">
-            <div class="row no-gutters align-items-center">
-              <div class="col mr-2">
-                <div class="text-xs font-weight-bold text-uppercase mb-1">
-                  <div class="chart-container" style="position: relative; height:100vh; width:100vw">
-                    <canvas id="chart"></canvas>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="card shadow py-2">
+          <canvas style="height:400px;" id="piechart"></canvas>
         </div>
 
       </div>
