@@ -33,16 +33,15 @@
               label: 'Chart COVID-19',
               data: [<?php while ($p = mysqli_fetch_array($data_jakarta)) { echo '"' . $p['positif'] . '","' . $p['sembuh'] . '","' . $p['meninggal'] . '"';}?>],
               backgroundColor: [
-                '#ffb6c1',
-                '#00ff00',
-                '#b22222'
+                '#57C4ED',
+                '#79CAC5',
+                '#4A4A4A'
                   ]
             }
             ]
             };
 
   var myPieChart = new Chart(ctx, {
-                  scaleFontColor: "white",
                   type: 'pie',
                   data: data,
                   options: {
